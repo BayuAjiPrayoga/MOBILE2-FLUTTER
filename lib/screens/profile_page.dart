@@ -16,10 +16,11 @@ class _ProfilePageState extends State<ProfilePage> {
   final TextEditingController _phoneController = TextEditingController();
 
   // Initial data
-  String name = 'Tekno';
-  String title = 'Scrolling Engineer';
-  String description = 'Scroll Fesnuk, Yapping';
-  String email = 'tekno@test.com';
+  String name = 'Bayu Aji Prayoga';
+  String title = 'Desain Grafis & Video Editor';
+  String description =
+      'Desainer grafis dan video editor yang bersemangat menciptakan konten visual yang menarik dan bermakna.';
+  String email = 'YogaDesain@gmail.com';
   String phone = '+62 812 3456 7890';
   final String imageUrl = 'https://flutter.dev/images/flutter-logo-sharing.png';
 

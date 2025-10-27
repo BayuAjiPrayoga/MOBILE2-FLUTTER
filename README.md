@@ -60,42 +60,39 @@ Aplikasi mendukung 3 mode tema yang dapat diubah dengan tombol di AppBar:
 
 ## 📱 Screenshot Fitur
 
-### Mode Edit Profil
+1. Mode Edit (Dark)
 
-- Klik tombol "Edit Profile" untuk masuk ke mode editing
-- Gunakan TextField untuk mengubah data
-- Tombol "Save" untuk menyimpan atau "Cancel" untuk membatalkan
+![Mode Edit - Dark](lib/assets/edit%20profile.png)
 
-### Navigasi
+- Menggunakan TextField untuk mengedit: Name, Title, Description, Email, Phone
+- Tombol aksi: Cancel dan Save
+- Foto profil menggunakan asset lokal (fallback ke network jika gagal)
 
-- **Floating Action Button**: Akses cepat ke halaman About
-- **PopupMenu**: Menu tambahan di AppBar
-- **Back Button**: Navigasi kembali dari halaman About
+2. Mode Tampilan (Dark)
 
-## 🛠️ Cara Menjalankan
+![Mode View - Dark](lib/assets/mode%20gelap.png)
 
-1. Pastikan Flutter SDK sudah terinstall
-2. Clone atau download project ini
-3. Buka terminal dan navigasi ke folder project
-4. Jalankan perintah:
-   ```bash
-   flutter pub get
-   flutter run
-   ```
+- Menampilkan nama, title, deskripsi, email, dan telepon
+- Tombol "Edit Profile" untuk masuk ke mode edit
 
-## 🧪 Testing
+3. Mode Tampilan (Light)
 
-Jalankan test dengan perintah:
+![Mode View - Light](lib/assets/mode%20terang.png)
 
-```bash
-flutter test
-```
+- Tema terang diaktifkan menggunakan toggle ThemeMode
 
-Test mencakup:
+4. Popup Menu (AppBar)
 
-- Verifikasi tampilan widget utama
-- Keberadaan tombol-tombol penting
-- Rendering data profil
+![Popup Menu - Tentang](lib/assets/pop%20up%20tentang.png)
+
+- Menu tambahan di AppBar untuk navigasi ke halaman Tentang
+
+5. Halaman Tentang
+
+![Halaman Tentang](lib/assets/tantang%20aplikasi.png)
+
+- Menampilkan informasi aplikasi, deskripsi, fitur utama, dan teknologi yang digunakan
+- Scrollable sehingga tidak overflow pada layar kecil
 
 ## 📚 Pembelajaran
 
@@ -131,17 +128,6 @@ Project ini mengajarkan:
 - ColorScheme
 - ThemeMode (system, light, dark)
 - Custom fonts
-
-## 👨‍💻 Pengembangan Selanjutnya
-
-Ide untuk pengembangan lebih lanjut:
-
-- Persistent storage dengan SharedPreferences
-- Validasi form input
-- Upload foto profil
-- Animasi transisi
-- Internationalization (i18n)
-- Unit tests yang lebih komprehensif
 
 ---
 
